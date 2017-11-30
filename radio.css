@@ -1,0 +1,65 @@
+/*
+HTML
+<div id="snow"></div>
+*/
+
+$midnight-express: #20283B;
+$sinbad: #A5D0CF;
+$valencia: #DE4E37;
+$white: #fff;
+
+body {
+	background-image: url("http://www.sannyas.wiki/images/e/ec/Osho_HD_020.jpg");
+	background-size: cover;
+}
+
+svg {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0.5);
+	transform-origin: 50% 50%;
+	width: 500px;
+	height: 500px;
+	backface-visibility: hidden;
+	// border: 1px solid red;
+}
+
+.base,
+.top,
+.stripe {
+	stroke-width: 3;
+	stroke: $valencia;
+	fill: none;
+}
+
+.top {
+	fill: $white;
+}
+
+.dot1,
+.dot2,
+.dot3 {
+	fill: $valencia;
+}
+
+.white .base {
+	fill: $white;
+}
+
+#snow {
+	animation: snow 10s linear infinite;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: none;
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/49306/snow.png');
+}
+
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
