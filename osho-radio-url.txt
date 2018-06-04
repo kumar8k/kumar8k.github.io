@@ -1,1 +1,1 @@
-http://fishtailfm.com:8000/stream4
+http://radioe.dns.osho.com:8348/live
