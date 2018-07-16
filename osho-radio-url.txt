@@ -1,1 +1,1 @@
-http://radioe.dns.osho.com:8348/live
+http://gkumar.org/osho/stream.php
